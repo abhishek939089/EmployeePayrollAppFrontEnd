@@ -1,0 +1,37 @@
+<div class="container">
+    <h2>Employee Details</h2>
+    <button (click)="openForm()" class="btn-add">+ Add User</button>
+
+    <div *ngIf="showForm">
+        <app-employee-form (closeForm)="closeForm()"></app-employee-form>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Start Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees">
+                <td>{{ employee.name }}</td>
+                <td>{{ employee.gender }}</td>
+                <td>
+                    <span *ngFor="let dept of employee.department" class="badge">{{ dept }}</span>
+                </td>
+                <td>₹ {{ employee.salary }}</td>
+                <td>{{ employee.startDate }}</td>
+                <td>
+                    <button (click)="deleteEmployee(employee.id)" class="btn-delete">
+                        🗑️
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

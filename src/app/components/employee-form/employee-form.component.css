@@ -1,0 +1,144 @@
+/* General Form Container */
+.form-container {
+  width: 450px;
+  margin: 50px auto;
+  padding: 25px;
+  background-color: #f3f4f6;
+  border: 2px solid #4caf50;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form Header */
+h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+h3 i {
+  color: #4caf50;
+  margin-right: 8px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 18px;
+}
+
+/* Labels with Icons */
+label {
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+label i {
+  margin-right: 10px;
+  color: #4caf50;
+}
+
+/* Input Box Styling */
+input[type='text'],
+input[type='number'],
+input[type='date'] {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Input Focus Style */
+input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Gender and Department Groups */
+.gender-group,
+.department-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 5px;
+}
+
+/* Radio and Checkbox Labels */
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Checkbox Styles */
+input[type='checkbox'] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Button Group */
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Button Styles */
+.btn-submit,
+.btn-cancel {
+  width: 48%;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Submit Button */
+.btn-submit {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-submit:hover {
+  background-color: #45a049;
+}
+
+/* Cancel Button */
+.btn-cancel {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background-color: #e53935;
+}
+
+/* Button Icons */
+.btn-submit i,
+.btn-cancel i {
+  margin-right: 8px;
+}
+
+/* Custom Checkbox and Radio Buttons */
+input[type='radio'],
+input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  accent-color: #4caf50;
+}

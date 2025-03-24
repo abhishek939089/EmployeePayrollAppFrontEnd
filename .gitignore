@@ -8,8 +8,11 @@
 
 # Node
 /node_modules
-npm-debug.log
-yarn-error.log
+npm-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
 # IDEs and editors
 .idea/
@@ -19,6 +22,9 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
+*.swp
+*.swo
+*.bak
 
 # Visual Studio Code
 .vscode/*
@@ -28,15 +34,67 @@ yarn-error.log
 !.vscode/extensions.json
 .history/*
 
-# Miscellaneous
+# Angular specific
 /.angular/cache
+/.angular/local
+/.angular/ngsw-config.json
+.angular/
+.angular/*
+
+# Coverage and test logs
+/coverage/
+*.lcov
+/karma-coverage/
+
+# Sass, SASS, and LESS cache
 .sass-cache/
+*.scssc
+*.sassc
+*.css.map
+*.less.map
+
+# Logs and lock files
 /connect.lock
-/coverage
 /libpeerconnection.log
 testem.log
 /typings
+npm-debug.log*
+yarn-debug.log*
 
 # System files
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Environment files
+.env
+.env.*
+/src/environments/environment.prod.ts
+/src/environments/environment.ts
+
+# Build artifacts
+/build
+/.eslintcache
+/.browserlistrc
+
+# Firebase/Hosting
+/firebase-debug.log
+.firebase/
+
+# Docker files
+Dockerfile
+docker-compose.yml
+*.dockerfile
+
+# Generated documentation
+docs/
+doc/
+*.docx
+
+# Local secrets and keys
+*.pem
+*.key
+*.crt
+*.p12
+*.env.local
